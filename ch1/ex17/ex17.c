@@ -4,7 +4,9 @@
 int getline(char line[], int maxline);
 void copy(char to[], char from[]);
 
-/*작동은 되는데 한행만 작업을 한다. ex16 < ex16 텍스트 파일을 입력해봐도 첫행만 작업하여 출력하는데 왜그런지 모르겠음 */
+
+/* ex16과 동일한 결함.... */
+
 main()
 {
 	int len;
@@ -13,11 +15,12 @@ main()
 	char longest[MAXLINE];
 
 	max =0;
-    while ((len =getline(line,MAXLINE)) >0){
-		copy(longest, line);
-        printf ("%d  %s\n", len -1,longest);
-        return 0;
-    }
+    while ((len =getline(line,MAXLINE)) >0)
+        if (len >=20){
+            copy(longest, line);
+			printf ("%s",longest);
+            return 0;
+        }
 }
 
 int getline(char s[], int lim)

@@ -1,8 +1,3 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
-main()
-{
-	printf("EOF°ªÀº '%d' ÀÔ´Ï´Ù.\n",EOF);
-}
-
-/* %d ´ë½Å %f¸¦ »ç¿ëÇßÀ»¶§ 0.0000 ÀÌ¶õ °ªÀÌ ³ª¿Â´Ù. -> ¿Ö? */
+main() { 	printf("EOFê°’ì€ '%f' ì…ë‹ˆë‹¤.\n",(double) EOF); }

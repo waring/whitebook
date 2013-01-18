@@ -1,13 +1,13 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 
 main()
 {
 	int c, n;
     n = 0;
-	while ((c = getchar()) !='\n')
+	while ((c = getchar()) !=EOF)
 
-		if (c !=' '){
+		if (c !=' ' && c !='\t'){
 			n = 0;
 	        putchar(c);
 		}

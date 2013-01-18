@@ -1,17 +1,20 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 
 main()
 {
-	int c, nl, nw;
+	int c, nl, t, n;
 
 	nl = 0;
-	nw = 0;
-	while ((c = getchar()) !='\n')
-		if (c =='\t')
+	t = 0;
+    n = 0;
+	while ((c = getchar()) !=EOF)
+        if (c == ' ')
 			++nl;
-		if (c == ' ')
-			++nw;
-		else
+        else if (c == '\t')
+            ++t;
+        else if (c == '\n')
+            ++n;
+        else
 			;
-	printf("ºóÄ­ÀÇ °è¼ö´Â %d°³ ÅÜÀÇ °è¼ö´Â %d°³\n", nl, nw);
+	printf("ë¹ˆì¹¸ì˜ ê³„ìˆ˜ëŠ” %dê°œ íƒ­ì˜ ê³„ìˆ˜ëŠ” %dê°œ í–‰ì˜ ê°œìˆ˜ëŠ” %dê°œ\n", nl, t, n);
 }

@@ -1,17 +1,16 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 main()
 {
     int c;
 
-	while ((c == getchar()) !='\n'){
+	while ((c = getchar()) !=EOF){
 		if (c == '\t')
 			printf ("\\t");
-        if (c == '\b')
+        else if (c == '\b')
 			printf ("\\b");
-        if (c == '\\')
+        else if (c == '\\')
 			printf ("\\\\");
-		    
 		else 
 			putchar(c);
 	}

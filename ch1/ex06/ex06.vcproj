@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9.00"
-	Name="ex17"
-	ProjectGUID="{C9346B26-9262-40D2-B1CC-C295C320FFFE}"
-	RootNamespace="ex17"
+	Name="ex06"
+	ProjectGUID="{415FB956-A6D6-42D7-AA13-83A2C81D0049}"
+	RootNamespace="ex06"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
 	>
@@ -171,7 +171,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\ex17.c"
+				RelativePath=".\ex06.c"
 				>
 			</File>
 		</Filter>

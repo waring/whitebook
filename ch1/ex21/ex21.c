@@ -1,24 +1,28 @@
-#include <stdio.h>
-#define ON 1
-#define OFF 0
-/* 스페이스기호가 2개이상 연속되어 입력된경우에만 \t 으로 교체하려했으나 실패 */
+癤�#include <stdio.h>
+
 main()
 {
-	int c, check;
-	check =OFF;
-	while ((c = getchar()) !='\n'){
-		if (check ==ON && c !=' '){
-            printf ("\t");
-			check =OFF;
-		}
-        else if (c ==' '){
-            printf ("  ");
-            check =ON;;
+	int c, i, check;
+    check =0;
+
+    while ((c =getchar()) !=EOF){
+        if (c !=' '){
+            if (check >=2){
+                for (i =check/8 +1; i >0; --i)
+                    printf ("\t");
+                check =0;
+                putchar(c);
+            }
+            else if (check ==1){
+                printf (" ");
+                putchar(c);
+                check =0;
+            }
+            else{
+                putchar(c);
+            }
         }
-        else{
-            putchar(c);
-            check =OFF;
-        }
-	}
-	printf ("\n");
+        else
+            ++check;
+    }
 }

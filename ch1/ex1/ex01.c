@@ -1,6 +1,36 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 
 main()
 {
-	printf("hello, world\n");
+    printf ("hello world\n");
 }
+/* printf함수에서 문자를 하나씩 뺐을경우
+  1>ex01.obj : error LNK2001: unresolved external symbol _prinf
+  1>C:\workspace\whitebook\ch1\Debug\ex01.exe : fatal error LNK1120: 1 unresolved externals
+  print,pintf 이런함수는 찾을수 없다는 뜻?
+
+  main의 소괄호를 뺐을경우
+  1>c:\workspace\whitebook\ch1\ex1\ex01.c(4) : error C2143: syntax error : missing ')' before '{'
+  (으로 소괄호가 열린후에 닫아주는 )을 찾을수 없다는 뜻인듯
+
+  main 중에서 문자를 뺐을경우
+  1>MSVCRTD.lib(crtexe.obj) : error LNK2019: unresolved external symbol _main referenced in function ___tmainCRTStartup
+  1>C:\workspace\whitebook\ch1\Debug\ex01.exe : fatal error LNK1120: 1 unresolved externals
+  음....... 한개의 해결되지않은 외관? main() {주 프로그램} 이 기본적인 구조가 망가져서?
+
+  {}중 한개를 뺐을경우 
+  1>c:\workspace\whitebook\ch1\ex1\ex01.c(26) : fatal error C1075: end of file found before the left brace '{' at 'c:\workspace\whitebook\ch1\ex1\ex01.c(4)' was matched
+  마찮가지로 { 이후에 }가 없어서 발생한에러?
+
+  include 중의 문자를 뺐을경우 예시로 includ
+  1>c:\workspace\whitebook\ch1\ex1\ex01.c(1) : fatal error C1021: invalid preprocessor command 'includ'
+  includ 라는 커맨드를 찾을수가 없다.
+
+  #을 뺐을경우
+  1>c:\workspace\whitebook\ch1\ex1\ex01.c(1) : error C2143: syntax error : missing '{' before '<'
+  1>c:\workspace\whitebook\ch1\ex1\ex01.c(1) : error C2059: syntax error : '<'
+  {을 찾을수없다? ????
+
+  <>안의 문자를 뺐을경우 에시로 tdio.h
+  1>c:\workspace\whitebook\ch1\ex1\ex01.c(1) : fatal error C1083: Cannot open include file: 'tdio.h': No such file or directory
+  stdio.h라는 모듈(?)을 호출할수없다 */

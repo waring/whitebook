@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="ex10"
-	ProjectGUID="{03645D91-C17C-4C80-A514-8E11566A982C}"
+	ProjectGUID="{CB18D412-6B6F-443A-8239-A1FFE17C2484}"
 	RootNamespace="ex10"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"

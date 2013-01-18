@@ -1,4 +1,6 @@
-#include <stdio.h>
+﻿#include <stdio.h>
+
+int f_of_c (int fahr);
 
 main()
 {
@@ -7,7 +9,8 @@ main()
 		f_of_c(fahr);
 }
 
-float f_of_c (int fahr)
+int f_of_c (int fahr)
 {
     printf("%3d %6.1f\n",fahr, (5.0/9.0) * (fahr - 32));
+    return 0; 
 }

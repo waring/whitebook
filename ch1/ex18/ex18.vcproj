@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="ex18"
-	ProjectGUID="{BB447129-2BFE-49D8-A9D4-5C3E129F1D4E}"
+	ProjectGUID="{F47330FB-9F60-48E3-8EDC-BADE7EF88308}"
 	RootNamespace="ex18"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
@@ -170,6 +170,10 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\ex18.c"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"

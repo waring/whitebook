@@ -1,10 +1,11 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #define ON 1
 #define OFF 0
 
 main()
 {
 	int c, q;
+    q =OFF;
 	while ((c = getchar()) !=EOF){
 		if (c == ' '){
 			if (q == ON)
@@ -20,3 +21,4 @@ main()
 		}			
 	}
 }
+/* cmd로 했는데 왜 한행씩만 입력받는걸까.. */

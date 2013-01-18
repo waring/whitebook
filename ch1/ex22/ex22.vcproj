@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="ex22"
-	ProjectGUID="{76572C8F-DD48-4117-9EED-CD3145050CF3}"
+	ProjectGUID="{8D558A14-768C-42A3-985E-C731D9AD40A6}"
 	RootNamespace="ex22"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
@@ -170,6 +170,10 @@
 			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath=".\ex22.c"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"

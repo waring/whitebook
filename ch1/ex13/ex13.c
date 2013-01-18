@@ -1,35 +1,36 @@
-/* µ¿ÀÛÀº µÇ´Âµ¥ µ¿ÀÛÈÄ ·±Å¸ÀÓ¿¡·¯¹ß»ı ??? */
-
-
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #define ON 1
 #define OFF 0
 
 main()
 {
-	int c, i, space, h, g, n;
+	int c, i, a, nl, nw, word;
     int s[100];
-	for (n =0 ; n <=100 ; ++n){
-		s[n] = 0;
-	}
-	i =0;
-	space = OFF;
-	while ((c =getchar()) !='\n'){
-		if (c !=' '){
-			space =OFF;
-			++s[i];
-		}
-		else if (space == OFF){
-			space =ON;
-			++i;
-		}
-		else
-			;
-	}
-	for (h =0; h <=i; ++h){
-		printf ("%d\t",h+1);
-		for (g =1; g <=s[h]; ++g)
-			printf ("¤±");
-	    printf ("\n");
-	}
+    a = 0;
+    word =ON;
+    for (i =0; i <=99; ++i)
+        s[i] =0;
+    while ((c =getchar()) !=EOF){
+        if (c>='0' && c<='~'){
+            ++a;
+            word =ON;
+        }
+        else if ((c =='\n' || c =='\t' || c ==' ') && word ==ON){
+            ++s[a-1]; /*ë¬¸ì œì˜ ê·¼ì›ì§€*/
+            a =0;
+            word =OFF;
+        }
+        else
+            ;
+    }
+        
+
+    for (nl=0; nl <=99; ++nl){
+        printf ("%d",nl+1);
+        for (nw =1; nw <= s[nl]; ++nw)
+            printf ("ã…");
+        printf ("\n");
+        }
+    printf ("\n");
 }
+/* 0ê°’ì„ ê°€ì§€ê³  ìˆëŠ” ++s[a-1]ë¥¼ ++s[a-1]; í•˜ë©´ 0 -> -858993460 ì´ ë˜ëŠ” ê¸°ê´´í•œ ì¼ì´ ì¼ì–´ë‚˜ëŠ”ë° ë„í†µì´ìœ ë¥¼ ëª¨ë¥´ê² ìŒ */

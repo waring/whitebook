@@ -3,7 +3,7 @@
 	ProjectType="Visual C++"
 	Version="9.00"
 	Name="ex20"
-	ProjectGUID="{C1A1349C-46A2-4E9A-AC43-281242566BE0}"
+	ProjectGUID="{C49C0A73-7AFD-41BE-A106-90E5BFA8C257}"
 	RootNamespace="ex20"
 	Keyword="Win32Proj"
 	TargetFrameworkVersion="196613"
@@ -171,7 +171,7 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath=".\dtab.c"
+				RelativePath=".\detap.c"
 				>
 			</File>
 		</Filter>
