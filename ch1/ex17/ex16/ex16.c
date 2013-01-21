@@ -4,7 +4,6 @@
 int getline(char line[], int maxline);
 void copy(char to[], char from[]);
 
-/*작동은 되는데 한행만 작업을 한다. ex16 < ex16 텍스트 파일을 입력해봐도 첫행만 작업하여 출력하는데 왜그런지 모르겠음 */
 main()
 {
 	int len;

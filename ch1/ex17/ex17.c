@@ -5,7 +5,6 @@ int getline(char line[], int maxline);
 void copy(char to[], char from[]);
 
 
-/* ex16과 동일한 결함.... */
 
 main()
 {
