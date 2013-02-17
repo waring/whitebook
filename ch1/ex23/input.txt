@@ -1,0 +1,13 @@
+/* comment 1 */
+/* */// comment 2 */
+/* /* comment 3 */
+#include <stdio.h>
+/* comment 4
+ *
+ */
+
+int main()
+{
+    printf("/* DELETE-ME-NOT\" */\n")
+	return 0; /* comment 5 */
+}

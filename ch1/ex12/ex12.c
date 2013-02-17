@@ -16,7 +16,5 @@ main()
 			    putchar('\n');
 	            n = 1;
 			}
-			else
-				;
     printf("\n");
 }

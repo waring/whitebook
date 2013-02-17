@@ -1,0 +1,12 @@
+
+// comment 2 */
+
+#include <stdio.h>
+
+
+int main()
+{
+    printf("/* DELETE-ME-NOT\" */\n")
+	return 0; 
+}
+

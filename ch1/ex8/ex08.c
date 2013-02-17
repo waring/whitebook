@@ -14,7 +14,5 @@ main()
             ++t;
         else if (c == '\n')
             ++n;
-        else
-			;
 	printf("빈칸의 계수는 %d개 탭의 계수는 %d개 행의 개수는 %d개\n", nl, t, n);
 }
